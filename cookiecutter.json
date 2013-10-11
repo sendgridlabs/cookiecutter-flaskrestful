@@ -1,0 +1,6 @@
+{
+    "app_name": "myapi",
+    "company_name": "SendGrid",
+    "package_namespace": "sg",
+	"project_short_description": "Short description of your project."
+}
