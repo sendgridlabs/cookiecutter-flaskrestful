@@ -1,7 +1,7 @@
 from setuptools import setup
 
 required_packages = [
-    'Cython==0.19.1'
+    'Cython==0.19.1',
     'setuptools==1.1.6',
     'Flask==0.10.1',
     'Flask-RESTful==0.2.3',
@@ -12,7 +12,7 @@ required_packages = [
     'Pygments==1.6',
     'Sphinx==1.2b1',
     'WTForms==1.0.4',
-    'Werkzeug==0.9.1'
+    'Werkzeug==0.9.1',
     'airbrake-flask==0.0.3',
     'anyjson==0.3.3',
     'coverage==3.6',
