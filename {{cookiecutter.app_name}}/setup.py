@@ -29,8 +29,8 @@ required_packages = [
 ]
 
 setup(
-    name='sendgrid.apu',
-    description='Apu - List segmentation service',
+    name='{{cookiecutter.package_namespace}}.{{cookiecutter.app_name}}',
+    description='{{cookiecutter.project_short_description}}',
     version='0.0.1',
     packages=['{{cookiecutter.package_namespace}}',
               '{{cookiecutter.package_namespace}}.{{cookiecutter.app_name}}'],
