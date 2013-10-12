@@ -2,11 +2,11 @@ from setuptools import setup
 
 required_packages = [
     'Cython==0.19.1',
+    'gevent==1.0dev',
     'setuptools==1.1.6',
     'Flask==0.10.1',
     'Flask-RESTful==0.2.3',
     'WTForms==1.0.5',
-    'gevent==1.0dev',
     'boto==2.10.0',
     'Fabric==1.6.1',
     'Pygments==1.6',
@@ -36,7 +36,7 @@ setup(
               '{{cookiecutter.package_namespace}}.{{cookiecutter.app_name}}'],
     namespace_packages=['{{cookiecutter.package_namespace}}'],
     install_requires=required_packages,
-    dependency_links=[('git+ssh://git@github.com/surfly/gevent.git@1.0rc3#'
+    dependency_links=[('https://github.com/surfly/gevent/tarball/master#'
             'egg=gevent-1.0dev')],
     extras_require={
         'test': [

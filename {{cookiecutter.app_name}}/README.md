@@ -17,7 +17,7 @@ Installation
 	$ virtualenv env/ && . env/bin/activate
 
 	# install required packages
-	$ python setup.py install
+	$ pip install -e .
 
 
 Documentation
@@ -34,11 +34,17 @@ Testing
 	# check for tests coverage
 	$ make cover
 
-Start service
+Start Service
 ---
 
+	# it will start on http://localhost:5000
 	$ ENV=dev python app.py
-	
+
+Example Usage
+---
+
+	$ curl 'localhost:5000/v1/users/'
+
 Deployment
 ---
 Provide deployment instruction here
