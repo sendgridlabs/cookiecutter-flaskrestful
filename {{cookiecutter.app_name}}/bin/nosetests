@@ -1,0 +1,15 @@
+#!/usr/bin/env python
+"""
+This file was taken from nosetests and modified to include patch gevent before
+anything is done.  This is mainly because of the threading module since both
+nose and coverage use threads and gevent needs to patch them before use.  The
+other change was to remove nose specific versions.
+
+"""
+from gevent import monkey
+monkey.patch_all()
+__requires__ = 'nose'
+import sys
+from pkg_resources import load_entry_point
+
+sys.exit(load_entry_point('nose', 'console_scripts', 'nosetests')())
